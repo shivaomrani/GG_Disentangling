@@ -137,19 +137,7 @@ def WordEmbeddingFactualAssociationTestVocab(semanticModel, vocabToTest, lang):
         unpleasant = ["nadużycie", "wypadek", "brud", "zabójstwo", "choroba", "awaria", "śmierć", "smutek", "trucizna",
                           "smród,atak", "katastrofa", "nienawiść", "zanieczyszczać", "tragedia", "rozwód", "więzienie",
                           "bieda", "brzydki", "rak", "zgniły", "wymiociny", "agonia", "areszt", "zło"]
-    elif lang == "tr":
 
-        pleasant = ["okşamak", "özgürlük", "sağlık", "sevgi", "barış", "neşe", "arkadaş", "cennet" , "sadık", "keyif", "pırlanta",
-                    "kibar", "dürüst", "şanslı", "gökkuşağı" ,"diploma", "hediye", "onur", "mucize", "gündoğumu", "aile", "mutlu",
-                    "kahkaha","cennet", "tatil"]
-
-        unpleasant = ["istismar", "çarpmak" ,"pislik", "cinayet", "hastalık", "ölüm", "üzüntü", "zehir",
-                      " kokuşmuş ", "saldırı", "felaket", "nefret", "kirletmek", "facia", "boşanmak",
-                      "hapishane", "fakirlik", "çirkin", "kanser", "öldürmek", "çürümüş", "kusmuk",
-                      "ızdırap", "sancı", "cezaevi"]
-    elif lang == "fa":
-        pleasant = ['نوازش', 'آزادی', 'سلامتی', 'عشق', 'صلح', 'تشویق کردن', 'دوست', 'بهشت', 'وفادار', 'لذت', 'الماس', 'ملایم', 'صادقانه', 'خوش شانس', 'رنگین کمان', 'دیپلم', 'هدیه', 'افتخار و احترام', 'معجزه', 'طلوع خورشید', 'خانواده', 'خوشحال', 'خنده', 'بهشت', 'تعطیلات']
-        unpleasant = ['سو استفاده', 'تصادف', 'کثافت', 'قتل', 'بیماری', 'تصادف', 'مرگ', 'غم', 'سم', 'بدبو', 'حمله', 'فاجعه', 'نفرت', 'آلوده', 'فاجعه', 'طلاق', 'زندان', 'فقر', 'زشت', 'سرطان', 'کشتن', 'پوسیده', 'استفراغ', 'عذاب', 'زندان']
 
     pleasant1 = removeCategoryWordsIfNotInDictionary(pleasant, semanticModel)
     unpleasant1 = removeCategoryWordsIfNotInDictionary(unpleasant, semanticModel)
